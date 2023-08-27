@@ -8,7 +8,7 @@ import '@matterlabs/hardhat-zksync-verify'
 
 export default {
   networks: {
-    zkSyncLocalhost: {
+    zkSyncTestNode: {
       url: 'http://localhost:8011',
       ethNetwork: '',
       zksync: true,
@@ -26,7 +26,7 @@ export default {
       verifyURL: 'https://zksync2-mainnet-explorer.zksync.io/contract_verification',
     },
   },
-  defaultNetwork: 'zkSyncLocalhost',
+  defaultNetwork: 'zkSyncTestNode',
   solidity: {
     version: '0.7.6',
   },
