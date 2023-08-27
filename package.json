@@ -1,7 +1,7 @@
 {
   "name": "era-uniswap-v3-core",
   "description": "🦄 Core smart contracts of Uniswap V3 forked for zkSync Era",
-  "license": "GNU GPL v3 or later",
+  "license": "GPL-3.0-or-later",
   "publishConfig": {
     "access": "public"
   },
@@ -32,7 +32,7 @@
     "@matterlabs/hardhat-zksync-solc": "^0.3.17",
     "@matterlabs/hardhat-zksync-verify": "^0.1.7",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
-    "@nomiclabs/hardhat-etherscan": "^2.1.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@typechain/ethers-v5": "^4.0.0",
     "@types/chai": "^4.2.6",
@@ -41,7 +41,7 @@
     "decimal.js": "^10.2.1",
     "ethereum-waffle": "^3.0.2",
     "ethers": "^5.7.0",
-    "hardhat": "^2.2.0",
+    "hardhat": "^2.14.0",
     "hardhat-typechain": "^0.3.5",
     "mocha": "^6.2.2",
     "mocha-chai-jest-snapshot": "^1.1.0",
