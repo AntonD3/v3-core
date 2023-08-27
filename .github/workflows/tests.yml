@@ -16,6 +16,18 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Install test node dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y \
+            cmake pkg-config libssl-dev clang
+
+      - name: Install test node
+        run: |
+          cargo install --git https://github.com/matter-labs/era-test-node.git --locked
 
       - id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -29,6 +41,10 @@ jobs:
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+
+      - name: Run test node
+        run: |
+          era_test_node run &
 
       # This is required separately from yarn test because it generates the typechain definitions
       - name: Compile

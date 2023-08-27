@@ -6,7 +6,7 @@ repository.
 
 ## Licensing
 
-The primary license for Uniswap V3 Core is the Business Source License 1.1 (`BUSL-1.1`), see [`LICENSE`](./LICENSE).
+The primary license for zkSync Era Uniswap V3 Core is the GNU GPL v3 or later (`GPL-3.0-or-later`), see [`LICENSE`](./LICENSE).
 
 ### Exceptions
 
